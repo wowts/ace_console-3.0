@@ -1,19 +1,24 @@
 {
-  "name": "@wowts/ace_console-3.0",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "tstolua -j"
-  },
-  "author": "Sidoine De Wispelaere",
-  "license": "MIT",
-  "dependencies": {
-    "@wowts/lua": "^1.0.3",
-    "@wowts/tslib": "^1.0.0"
-  },
-  "devDependencies": {
-    "@wowts/tstolua": "^1.0.9"
-  }
+    "name": "@wowts/ace_console-3.0",
+    "version": "1.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "tsc"
+    },
+    "author": "Sidoine De Wispelaere",
+    "license": "MIT",
+    "dependencies": {
+        "@wowts/lua": "^1.0.3",
+        "@wowts/tslib": "^1.0.0"
+    },
+    "devDependencies": {
+        "typescript": "^4.1.2"
+    },
+    "lua": {
+        "name": "AceConsole-3.0",
+        "svn": "https://repos.wowace.com/wow/ace3/trunk/AceConsole-3.0",
+        "entry": "AceConsole-3.0.xml"
+    }
 }
